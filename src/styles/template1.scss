@@ -1,0 +1,127 @@
+.template1 {
+  width: 594px;
+  height: 842px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px #fff;
+  padding: 1rem;
+  text-align: left;
+  margin-bottom: 50px;
+  hr {
+    border: 1px solid #333;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .description {
+    font-size: 8;
+  }
+  .sub-section-heading {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(21, 84, 177);
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  .top-section {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    min-height: 120px;
+  }
+  .links {
+    li {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      font-size: 14px;
+    }
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .holder {
+      height: 80px;
+      width: 80px;
+      padding: 3px;
+      border: 2px solid black;
+      border-radius: 50%;
+    }
+    img {
+      max-width: 70px;
+      max-height: 70px;
+      min-width: 70px;
+      min-height: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    input[type="file"] {
+      margin-top: 5px;
+      display: none;
+    }
+    .heading {
+      font-family: Montserrat;
+      font-size: 45px;
+      color: green;
+      // color: rgb(40, 120, 240);
+    }
+  }
+  .bottom-sections {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .common-btn {
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px #333;
+      padding: 2px;
+      cursor: pointer;
+    }
+    .experience-container {
+      padding: 10px;
+      border-radius: 0px 0px 10px 0px;
+      div {
+      }
+      .btn-container {
+        position: relative;
+        top: -45px;
+        left: 85%;
+        width: 40px;
+      }
+      .job-title {
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .company-name {
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .dates {
+        font-size: 10px;
+        font-weight: 400;
+      }
+      .location {
+        font-size: 10px;
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+    .skills-section {
+      display: flex;
+      flex-wrap: wrap;
+      .delete-button {
+        position: relative;
+        top: -30px;
+        left: 75%;
+        font-size: 12px;
+      }
+      .skill-batch {
+        font-size: 12px;
+        margin: 2px;
+        padding: 2px 4px;
+      }
+    }
+  }
+}
